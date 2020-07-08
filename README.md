@@ -38,7 +38,12 @@
    -> pip install django
 8) Run the local server
    -> python manage.py runserver
-         
+ 
+### Process to get the Json data in desired format
+1) Sample Data for customers and acitvity period has been given in the customer_sample_data.json and acitivty_sample_data.json files.
+2) Please POST the data from customer : "http://localhost:8000/customer/" and then from activty :"http://localhost:8000/activity/" using POSTMAN.
+3) During the GET request, data will be received in the format as asked.
+
 
 The application has been deployed on PythonAnywhere :  http://srkdav1994.pythonanywhere.com/
 
