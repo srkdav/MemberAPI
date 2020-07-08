@@ -4,16 +4,15 @@ from rest_framework import viewsets
 from .serializer import CustomerSerializer,ActivitySerializer
 from .models import *
 
-# Create your views here.
+# Customer View and Activity View.
 class CustomerViewSet(viewsets.ModelViewSet):
     queryset = Customer.objects.all()
     serializer_class = CustomerSerializer
   
+  #to ensure list of objects can be sent by POST not just an object alone.
     def get_serializer(self, *args, **kwargs):
         if "data" in kwargs:
             data = kwargs["data"]
-
-        # check if many is required
             if isinstance(data, list):
                 kwargs["many"] = True
 
@@ -22,11 +21,11 @@ class CustomerViewSet(viewsets.ModelViewSet):
 class ActivityViewSet(viewsets.ModelViewSet):
     queryset = ActivityPeriod.objects.all()
     serializer_class = ActivitySerializer
+    
+    #to ensure list of objects can be sent by POST not just an object alone.
     def get_serializer(self, *args, **kwargs):
         if "data" in kwargs:
             data = kwargs["data"]
-
-        # check if many is required
             if isinstance(data, list):
                 kwargs["many"] = True
 

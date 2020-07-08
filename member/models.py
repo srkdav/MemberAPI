@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+#Customer Model And ActivityPeriod Model.
 class Customer(models.Model):
     cust_id = models.CharField(primary_key=True,max_length=200)
     real_name = models.CharField(max_length=200,null=True)
