@@ -9,7 +9,7 @@
   <p align="center">
    The REST API enables you to view Member information along with their respective activity periods.  
     <br />
-    <a href="http://srkdav1994.pythonanywhere.com/">Access from PythonAnywhere</a>
+    <a href="http://srkdav1994.pythonanywhere.com/">Access from PythonAnyWhere</a>
   </p>
 </p>
 
@@ -28,11 +28,16 @@
 1) Clone the repository to a "Projects" folder.
 2) Open the project "MemberAPI" in VSCode preferably.
 3) Open terminal and ensure Python,pip are installed.
-4) pip install virtualenvwrapper-win #virtual environment to run our project on windows.
-5) virtualenv venv #create environment
-6) workon venv #to confirm the environment is active.
-7) pip install django
-8) python manage.py runserver #run the local server
+4) Down Virtual environment setup to run our project on windows.
+    pip install virtualenvwrapper-win
+5) Create environment
+    virtualenv venv 
+6) To confirm the environment is active.
+    workon venv
+7) Install Django.
+   pip install django
+8) Run the local server
+   python manage.py runserver
          
 
 The application has been deployed on PythonAnywhere :  http://srkdav1994.pythonanywhere.com/
