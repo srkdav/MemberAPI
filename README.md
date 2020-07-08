@@ -21,7 +21,8 @@
 ### BackGround  
            
  There is a one to many relationship between Member and Activty Period. 
- Each Member can have multiple Activty Periods. Activity Period has a field Customer ID as the foreign key.
+ Each Member can have multiple Activty Periods. Activity Period has a field Customer ID as the foreign key. Hence, it is pertinent that the Customer details are sent
+ by POST method and THEN Activity period data is sent by POST due to the FK constraint.
 
 ### Commands to run  
             
