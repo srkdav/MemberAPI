@@ -30,9 +30,13 @@
 2) Open the project "MemberAPI" in VSCode preferably.
 3) Open terminal and ensure Python,pip are installed.
 4) Down Virtual environment setup to run our project on windows.
-    -> pip install virtualenvwrapper-win
+     ```
+   -> pip install virtualenvwrapper-win
+     ```
 5) Create environment
+     ```
     -> virtualenv venv 
+     ```
 6) To confirm the environment is active.
     -> workon venv
 7) Install Django.
