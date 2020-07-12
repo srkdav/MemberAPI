@@ -31,27 +31,32 @@
 3) Open terminal and ensure Python,pip are installed.
 4) Down Virtual environment setup to run our project on windows.
      ```
-   -> pip install virtualenvwrapper-win
+     pip install virtualenvwrapper-win
      ```
 5) Create environment
      ```
-    -> virtualenv venv 
+     virtualenv venv 
      ```
 6) To confirm the environment is active.
-    -> workon venv
+     ```
+    workon venv
+     ```
 7) Install Django.
-   -> pip install django
+    ```
+   pip install django
+    ```
 8) Run the local server
-   -> python manage.py runserver
- 
+    ```
+   python manage.py runserver
+   ```
 ### Process to get the Json data in desired format
 1) Sample Data for customers and acitvity period has been given in the customer_sample_data.json and acitivty_sample_data.json files.
 2) Please POST the data from customer : "http://localhost:8000/customer/" and then from activty :"http://localhost:8000/activity/" using POSTMAN.
 3) During the GET request from customer: "http://localhost:8000/customer/" , data will be received in the format as asked.
 
-
+ ```
 The application has been deployed on PythonAnywhere :  http://srkdav1994.pythonanywhere.com/
-
+ ```
 
                  
                   
